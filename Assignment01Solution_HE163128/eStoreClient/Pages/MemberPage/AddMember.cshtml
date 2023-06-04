@@ -1,0 +1,68 @@
+﻿@page
+@model eStoreClient.Pages.MemberPage.AddMemberModel
+@{
+}
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        @*<div class="title">
+                        <h4>Form</h4>
+                        </div>*@
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a asp-page="Member">Member List</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Member</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Default Basic Forms Start -->
+            <div class="pd-20 card-box mb-30">
+                <form method="post">
+                    <div class="form-group row">
+                        <label asp-for="MemberAddRequest.CompanyName" class="col-sm-12 col-md-2 col-form-label">Company Name</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="MemberAddRequest.CompanyName" class="form-control" type="text" placeholder="Company Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="MemberAddRequest.Email" class="col-sm-12 col-md-2 col-form-label">Email</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="MemberAddRequest.Email" class="form-control" type="text" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="MemberAddRequest.City" class="col-sm-12 col-md-2 col-form-label">City</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="MemberAddRequest.City" class="form-control" type="text" placeholder="City">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="MemberAddRequest.Country" class="col-sm-12 col-md-2 col-form-label">Country</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="MemberAddRequest.Country" class="form-control" type="text" placeholder="Country">
+                        </div>
+                    </div
+                    <div class="form-group row">
+                        <label asp-for="MemberAddRequest.Password" class="col-sm-12 col-md-2 col-form-label">Password</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="MemberAddRequest.Password" class="form-control" type="text" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="btn-list">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a asp-page="Member" type="submit" class="btn btn-danger">Cancel</a>
+                    </div>
+                </form>
+            </div>
+            <!-- Default Basic Forms End -->
+
+        </div>
+    </div>
+</div>

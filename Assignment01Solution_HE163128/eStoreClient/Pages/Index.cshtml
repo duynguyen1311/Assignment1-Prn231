@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@*@{
+    ViewData["Title"] = "Home page";
+    if(ViewData["Login"] == "Login Success")
+    {
+        Response.Redirect("/Index");
+    }
+    else
+    {
+        Response.Redirect("/Login");
+    }
+}*@
+
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="title">
+                            <h4>Notifications</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-wrap">
+                <div id="accordion">
+                    
+                        <div class="card">
+                            <div class="card-header">
+                                <button class="btn btn-block" data-toggle="collapse" data-target="#faq1">
+                                    Title
+                                </button>
+                            </div>
+                            <div id="faq1" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    Content
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

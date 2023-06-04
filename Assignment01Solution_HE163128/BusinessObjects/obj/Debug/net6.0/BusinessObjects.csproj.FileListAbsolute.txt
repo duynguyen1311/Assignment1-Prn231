@@ -1,0 +1,15 @@
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\bin\Debug\net6.0\appsettings.json
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\bin\Debug\net6.0\BusinessObjects.deps.json
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\bin\Debug\net6.0\BusinessObjects.runtimeconfig.json
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\bin\Debug\net6.0\BusinessObjects.dll
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\bin\Debug\net6.0\BusinessObjects.pdb
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.AssemblyReference.cache
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.GeneratedMSBuildEditorConfig.editorconfig
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfoInputs.cache
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.AssemblyInfo.cs
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.csproj.CoreCompileInputs.cache
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.dll
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\refint\BusinessObjects.dll
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.pdb
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\BusinessObjects.genruntimeconfig.cache
+E:\C# project\Assignment01Solution_HE163128\BusinessObjects\obj\Debug\net6.0\ref\BusinessObjects.dll

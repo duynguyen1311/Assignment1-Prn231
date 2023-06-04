@@ -1,0 +1,98 @@
+﻿@page
+@model eStoreClient.Pages.OrderPage.AddOrderModel
+@{
+}
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        @*<div class="title">
+                        <h4>Form</h4>
+                        </div>*@
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a asp-page="Order">Order List</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Order</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- Default Basic Forms Start -->
+            <div class="pd-20 card-box mb-30">
+                <form method="post">
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.OrderDate" class="col-sm-12 col-md-2 col-form-label">Order Date</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.OrderDate" class="form-control" type="date" placeholder="Order Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.RequireDate" class="col-sm-12 col-md-2 col-form-label">Require Date</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.RequireDate" class="form-control" type="date" placeholder="Require Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.ShippedDate" class="col-sm-12 col-md-2 col-form-label">Shipped Date</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.ShippedDate" class="form-control" type="date" placeholder="Shipped Date">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.Freight" class="col-sm-12 col-md-2 col-form-label">Freight</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.Freight" class="form-control" type="text" placeholder="Freight">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.UnitPrice" class="col-sm-12 col-md-2 col-form-label">UnitPrice</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.UnitPrice" class="form-control" type="text" placeholder="UnitPrice">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.Quantity" class="col-sm-12 col-md-2 col-form-label">Quantity</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.Quantity" class="form-control" type="text" placeholder="Quantity">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="OrderAddRequest.Discount" class="col-sm-12 col-md-2 col-form-label">Discount</label>
+                        <div class="col-sm-12 col-md-10">
+                            <input asp-for="OrderAddRequest.Discount" class="form-control" type="text" placeholder="Discount">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>@Html.LabelFor(c=>c.OrderAddRequest.ProductId)</label>
+                        <select asp-for="OrderAddRequest.ProductId" class="custom-select2 form-control" style="width: 100%; height: 38px;">
+                            @foreach(var item in Model.listProduct)
+                            {
+                                <option value="@item.ProductId">@item.ProductName</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>@Html.LabelFor(c=>c.OrderAddRequest.MemberId)</label>
+                        <select asp-for="OrderAddRequest.MemberId" class="custom-select2 form-control" style="width: 100%; height: 38px;">
+                            @foreach(var item in Model.listMember)
+                            {
+                                <option value="@item.MemberId">@item.CompanyName</option>
+                            }
+                        </select>
+                    </div>
+                    <div class="btn-list">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <a asp-page="Order" type="submit" class="btn btn-danger">Cancel</a>
+                    </div>
+                </form>
+            </div>
+            <!-- Default Basic Forms End -->
+
+        </div>
+    </div>
+</div>
