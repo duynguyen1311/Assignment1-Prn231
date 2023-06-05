@@ -24,10 +24,16 @@ namespace eStoreClient.Pages.OrderPage
             client.DefaultRequestHeaders.Accept.Add(contentType);
             OrderApiUrl = _configuration.GetValue<string>("DomainURL") + "Order/GetAllOrder";
         }
-        public async Task<IActionResult> OnGetAsync(string? keyword, bool? status)
+        public async Task<IActionResult> OnGetAsync(string? keyword)
         {
-            
-            HttpResponseMessage resp = await client.GetAsync(OrderApiUrl);
+
+            Keyword = keyword;
+            string url = OrderApiUrl + "?keyword=" + keyword;
+            if (keyword == null)
+            {
+                url = OrderApiUrl;
+            }
+            HttpResponseMessage resp = await client.GetAsync(url);
 
             var strData = await resp.Content.ReadAsStringAsync();
             var options = new JsonSerializerOptions

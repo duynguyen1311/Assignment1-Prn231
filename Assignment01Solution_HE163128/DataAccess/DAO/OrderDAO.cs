@@ -11,14 +11,15 @@ namespace DataAccess.DAO
 {
     public class OrderDAO
     {
-        public static List<Order>? GetOrders()
+        public static List<Order>? GetOrders(string? keyword)
         {
             List<Order>? listOrders = null;
             try
             {
                 using (var context = new PRN231_AS1Context())
-                {
-                    listOrders = context.Orders.Include(i => i.Member).AsNoTracking().ToList();
+                { 
+                    if(keyword == null) listOrders = context.Orders.Include(i => i.Member).AsNoTracking().ToList();
+                    else listOrders = context.Orders.Include(i => i.Member).Where(i => !string.IsNullOrEmpty(i.Member.CompanyName) && i.Member.CompanyName.ToLower().Contains(keyword.ToLower())).AsNoTracking().ToList();
                 }
             }
             catch (Exception e)

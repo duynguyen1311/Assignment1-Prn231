@@ -16,7 +16,7 @@ namespace DataAccess.Repository
         public void SaveOrder(OrderRequestDto p) => OrderDAO.SaveOrder(p);
         public void UpdateOrder(OrderUpdateRequestDto p) => OrderDAO.UpdateOrder(p);
         public List<Category> GetCategories() => CategoryDAO.GetCategories();
-        public List<Order>? GetOrders() => OrderDAO.GetOrders();
+        public List<Order>? GetOrders(string? keyword) => OrderDAO.GetOrders(keyword);
         public Order GetOrderById(int id) => OrderDAO.FindOrderById(id);
     }
 }

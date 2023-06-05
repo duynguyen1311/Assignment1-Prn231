@@ -16,7 +16,7 @@ namespace DataAccess.Repository
         public void SaveMember(MemberRequestDto p) => MemberDAO.SaveMember(p);
         public void UpdateMember(MemberUpdateRequest p) => MemberDAO.UpdateMember(p);
         public List<Category> GetCategories() => CategoryDAO.GetCategories();
-        public List<Member>? GetMembers() => MemberDAO.GetMembers();
+        public List<Member>? GetMembers(string? keyword) => MemberDAO.GetMembers(keyword);
         public Member GetMemberById(int id) => MemberDAO.FindMemberById(id);
         public bool Login(string email, string password) => MemberDAO.Login(email, password);
         public void Register(MemberRequestDto member) => MemberDAO.Register(member);

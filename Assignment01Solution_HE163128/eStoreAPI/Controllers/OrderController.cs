@@ -16,7 +16,7 @@ namespace eStoreAPI.Controllers
 
         // GET: api/Orders
         [HttpGet("GetAllOrder")]
-        public ActionResult<IEnumerable<Order>> GetOrders() => repository.GetOrders();
+        public ActionResult<IEnumerable<Order>> GetOrders(string? keyword) => repository.GetOrders(keyword);
 
         [HttpPost("AddOrder")]
         public IActionResult AddOrder(OrderRequestDto p)

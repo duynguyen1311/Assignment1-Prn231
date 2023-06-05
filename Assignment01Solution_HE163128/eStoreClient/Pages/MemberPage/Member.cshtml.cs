@@ -15,8 +15,6 @@ namespace eStoreClient.Pages.MemberPage
 
         [BindProperty]
         public string? Keyword { get; set; }
-        [BindProperty]
-        public bool? Status { get; set; }
 
         public MemberModel(IConfiguration configuration)
         {
@@ -26,14 +24,15 @@ namespace eStoreClient.Pages.MemberPage
             client.DefaultRequestHeaders.Accept.Add(contentType);
             MemberApiUrl = _configuration.GetValue<string>("DomainURL") + "Member/GetAllMember";
         }
-        public async Task<IActionResult> OnGetAsync(string? keyword, bool? status)
+        public async Task<IActionResult> OnGetAsync(string? keyword)
         {
-            var requestdata = new
+            Keyword = keyword;
+            string url = MemberApiUrl + "?keyword=" + keyword;
+            if (keyword == null)
             {
-                Keyword = keyword,
-                Status = status
-            };
-            HttpResponseMessage resp = await client.GetAsync(MemberApiUrl);
+                url = MemberApiUrl;
+            }
+            HttpResponseMessage resp = await client.GetAsync(url);
 
             var strData = await resp.Content.ReadAsStringAsync();
             var options = new JsonSerializerOptions

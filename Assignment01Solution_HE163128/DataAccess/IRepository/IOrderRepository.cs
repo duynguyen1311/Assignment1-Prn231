@@ -9,6 +9,6 @@ namespace DataAccess.IRepository
         Order GetOrderById(int id);
         void DeleteOrder(Order p);
         void UpdateOrder(OrderUpdateRequestDto p);
-        List<Order>? GetOrders();
+        List<Order>? GetOrders(string? keyword);
     }
 }

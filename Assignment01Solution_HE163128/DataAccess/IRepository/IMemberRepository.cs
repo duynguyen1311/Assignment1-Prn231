@@ -16,6 +16,6 @@ namespace DataAccess.IRepository
         Member GetMemberById(int id);
         void DeleteMember(Member p);
         void UpdateMember(MemberUpdateRequest p);
-        List<Member>? GetMembers();
+        List<Member>? GetMembers(string? keyword);
     }
 }

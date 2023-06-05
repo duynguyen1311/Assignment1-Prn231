@@ -23,7 +23,7 @@ namespace eStoreAPI.Controllers
         }
         // GET: api/Members
         [HttpGet("GetAllMember")]
-        public ActionResult<IEnumerable<Member>> GetMembers() => repository.GetMembers();
+        public ActionResult<IEnumerable<Member>> GetMembers(string? keyword) => repository.GetMembers(keyword);
 
         [HttpPost("AddMember")]
         public IActionResult AddMember(MemberRequestDto p)

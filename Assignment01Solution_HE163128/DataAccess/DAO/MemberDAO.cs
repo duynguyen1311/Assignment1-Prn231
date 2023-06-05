@@ -59,14 +59,22 @@ namespace DataAccess.DAO
             }
         }
 
-        public static List<Member>? GetMembers()
+        public static List<Member>? GetMembers(string? keyword)
         {
             List<Member>? listMembers = null;
             try
             {
                 using (var context = new PRN231_AS1Context())
                 {
-                    listMembers = context.Members.AsNoTracking().ToList();
+                    if (keyword == null)
+                    {
+                        listMembers = context.Members.AsNoTracking().ToList();
+                    }
+                    else
+                    {
+                        listMembers = context.Members.Where(i => !string.IsNullOrEmpty(i.CompanyName) && i.CompanyName.ToLower().Contains(keyword.ToLower())
+                                                              || !string.IsNullOrEmpty(i.Email) && i.Email.ToLower().Contains(keyword.ToLower())).AsNoTracking().ToList();
+                    }
                 }
             }
             catch (Exception e)
