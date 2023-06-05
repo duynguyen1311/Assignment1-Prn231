@@ -12,5 +12,6 @@ namespace DataAccess.IRepository
     {
         OrderDetail FindOrderDetailById(int orderId);
         void UpdateOrderDetail(OrderDetailUpdateRequestDto p);
+        List<OrderDetail> ReportOrder(DateTime? fromDate, DateTime? toDate);
     }
 }

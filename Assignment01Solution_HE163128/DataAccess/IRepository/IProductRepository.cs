@@ -16,6 +16,6 @@ namespace DataAccess.Repository
 		void DeleteProduct(Product p);
 		void UpdateProduct(ProductUpdateRequestDto p);
 		List<Category> GetCategories();
-		List<Product>? GetProducts(string? keyword, int unitP);
+		List<Product>? GetProducts(string? keyword, int? unitP);
 	}
 }

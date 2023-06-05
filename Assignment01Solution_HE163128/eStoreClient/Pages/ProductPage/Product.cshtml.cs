@@ -18,7 +18,7 @@ namespace eStoreClient.Pages.ProductPage
         [BindProperty]
         public string? Keyword { get; set; }
         [BindProperty]
-        public int? Price { get; set; }
+        public string? Price { get; set; }
 
         public ProductModel(IConfiguration configuration)
         {
@@ -28,14 +28,17 @@ namespace eStoreClient.Pages.ProductPage
             client.DefaultRequestHeaders.Accept.Add(contentType);
             ProductApiUrl = _configuration.GetValue<string>("DomainURL") + "Product/GetAllProduct";
         }
-        public async Task<IActionResult> OnGetAsync(string? keyword, int? price)
+        public async Task<IActionResult> OnGetAsync(string? keyword, string? price)
         {
             Keyword = keyword;
             Price = price;
 
-            client.DefaultRequestHeaders.Add("Keyword", Keyword);
-            client.DefaultRequestHeaders.Add("Price", Price.ToString());
-            HttpResponseMessage resp = await client.GetAsync(ProductApiUrl);
+            string url = ProductApiUrl+"?keyword="+keyword+"&unitP="+price;
+            if(keyword == null && price == null)
+            {
+                url = ProductApiUrl;
+            }
+            HttpResponseMessage resp = await client.GetAsync(url);
 
             var strData = await resp.Content.ReadAsStringAsync();
             var options = new JsonSerializerOptions

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cfiTB/rqMB5EDCAgXPBiTGI4JpD4ODwDbNwlfiUUheZMRpfwtIXx+NkeN60aYP5qWILSNpypYhPrwTkIKIUpcw==",
+  "dgSpecHash": "ieXiu8FdHq1XnAcE8TC97ohV4F1csEp1T3TXvKY1jIqKc0jc+leAsYrm1JC/a8KNc67VJ6li5gt13qEC+nPNtg==",
   "success": true,
-  "projectFilePath": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj",
+  "projectFilePath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thinkpad\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

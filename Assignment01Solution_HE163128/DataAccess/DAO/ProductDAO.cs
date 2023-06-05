@@ -12,7 +12,7 @@ namespace DataAccess
 {
     public class ProductDAO
     {
-        public static List<Product>? GetProducts(string? keyword, int unitP)
+        public static List<Product>? GetProducts(string? keyword, int? unitP)
         {
             List<Product>? listProducts = null;
             try
@@ -22,7 +22,7 @@ namespace DataAccess
                     var query = context.Products.AsQueryable();
                     if (keyword != null)
                     {
-                        query = query.Where(i => !string.IsNullOrEmpty(i.ProductName) && i.ProductName.ToLower().Equals(keyword.ToLower()));
+                        query = query.Where(i => !string.IsNullOrEmpty(i.ProductName) && i.ProductName.ToLower().Contains(keyword.ToLower()));
                     }
                     if(unitP > 0)
                     {

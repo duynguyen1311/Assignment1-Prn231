@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\C# project\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj": {}
+    "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj": {}
   },
   "projects": {
-    "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj": {
+    "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
+        "projectUniqueName": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
         "projectName": "BusinessObjects",
-        "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
+        "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
         "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
-        "outputPath": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\obj\\",
+        "outputPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,14 +89,14 @@
         }
       }
     },
-    "E:\\C# project\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj": {
+    "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# project\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj",
+        "projectUniqueName": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj",
         "projectName": "DataAccess",
-        "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj",
+        "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj",
         "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
-        "outputPath": "E:\\C# project\\Assignment01Solution_HE163128\\DataAccess\\obj\\",
+        "outputPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -113,8 +113,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj": {
-                "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj"
+              "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj": {
+                "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj"
               }
             }
           }
@@ -148,14 +148,14 @@
         }
       }
     },
-    "E:\\C# project\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj": {
+    "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj",
+        "projectUniqueName": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj",
         "projectName": "eStoreAPI",
-        "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj",
+        "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreAPI\\eStoreAPI.csproj",
         "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
-        "outputPath": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreAPI\\obj\\",
+        "outputPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,8 +172,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\C# project\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj": {
-                "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj"
+              "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj": {
+                "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\DataAccess\\DataAccess.csproj"
               }
             }
           }

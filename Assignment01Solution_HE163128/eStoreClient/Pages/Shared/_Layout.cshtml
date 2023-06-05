@@ -154,7 +154,8 @@
                         <a href="/ProductPage/Product" class="dropdown-toggle no-arrow">
                             <span class="micon dw dw-list3"></span><span class="mtext">Product</span>
                         </a>
-                    </li>
+                    </li> 
+                    
                     @*@if (User.IsInRole(RoleConstant.ADMIN))
                     {*@
                         <li>
@@ -163,6 +164,11 @@
                             </a>
                         </li>
                     @*}*@
+                    <li>
+                        <a href="/OrderPage/ReportOrder" class="dropdown-toggle no-arrow">
+                            <span class="micon dw dw-list3"></span><span class="mtext">Report</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

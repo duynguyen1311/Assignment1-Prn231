@@ -15,7 +15,7 @@ namespace eStoreAPI.Controllers
 
         // GET: api/Products
         [HttpGet("GetAllProduct")]
-        public ActionResult<IEnumerable<Product>> GetProducts(string? keyword, int unitP) => repository.GetProducts(keyword,unitP);
+        public ActionResult<IEnumerable<Product>> GetProducts(string? keyword, int? unitP) => repository.GetProducts(keyword,unitP);
 
         [HttpGet("GetAllCategory")]
         public ActionResult<IEnumerable<Category>> GetCategory() => repository.GetCategories();

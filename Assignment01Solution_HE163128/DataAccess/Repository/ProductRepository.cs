@@ -16,7 +16,7 @@ namespace DataAccess.Repository
         public void SaveProduct(ProductRequestDto p) => ProductDAO.SaveProduct(p);
         public void UpdateProduct(ProductUpdateRequestDto p) => ProductDAO.UpdateProduct(p);
         public List<Category> GetCategories() => CategoryDAO.GetCategories();
-        public List<Product>? GetProducts(string? keyword, int unitP) => ProductDAO.GetProducts(keyword, unitP);
+        public List<Product>? GetProducts(string? keyword, int? unitP) => ProductDAO.GetProducts(keyword, unitP);
         public Product GetProductById(int id) => ProductDAO.FindProductById(id);
 	}
 }

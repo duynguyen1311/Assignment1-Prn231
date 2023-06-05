@@ -2388,11 +2388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
+      "projectUniqueName": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
       "projectName": "BusinessObjects",
-      "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
+      "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj",
       "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
-      "outputPath": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\obj\\",
+      "outputPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",

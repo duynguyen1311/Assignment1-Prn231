@@ -15,8 +15,6 @@ namespace eStoreClient.Pages.OrderPage
 
         [BindProperty]
         public string? Keyword { get; set; }
-        [BindProperty]
-        public bool? Status { get; set; }
 
         public OrderModel(IConfiguration configuration)
         {
@@ -28,11 +26,7 @@ namespace eStoreClient.Pages.OrderPage
         }
         public async Task<IActionResult> OnGetAsync(string? keyword, bool? status)
         {
-            var requestdata = new
-            {
-                Keyword = keyword,
-                Status = status
-            };
+            
             HttpResponseMessage resp = await client.GetAsync(OrderApiUrl);
 
             var strData = await resp.Content.ReadAsStringAsync();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SYrJwe/AFyzf53RVWrsXLcQfBhnT/lc/zdxb3gHwt1wBiVQ/v8h2WNG649mGwYctDttbV3KI6OCYZpN/NavU9A==",
+  "dgSpecHash": "s9NaGrHzs7KSlgwQcKBpTr1jx01QSnDGby9nAWl1QpjImwohAbM6kFudlG9lRoeH+tbkqSKKoQKuxcoacRVk2g==",
   "success": true,
-  "projectFilePath": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreClient\\eStoreClient.csproj",
+  "projectFilePath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreClient\\eStoreClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Thinkpad\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

@@ -2347,11 +2347,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreClient\\eStoreClient.csproj",
+      "projectUniqueName": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreClient\\eStoreClient.csproj",
       "projectName": "eStoreClient",
-      "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreClient\\eStoreClient.csproj",
+      "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreClient\\eStoreClient.csproj",
       "packagesPath": "C:\\Users\\Thinkpad\\.nuget\\packages\\",
-      "outputPath": "E:\\C# project\\Assignment01Solution_HE163128\\eStoreClient\\obj\\",
+      "outputPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\eStoreClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Thinkpad\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2368,8 +2368,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj": {
-              "projectPath": "E:\\C# project\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj"
+            "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj": {
+              "projectPath": "E:\\C# project\\Assignment1-Prn231\\Assignment01Solution_HE163128\\BusinessObjects\\BusinessObjects.csproj"
             }
           }
         }

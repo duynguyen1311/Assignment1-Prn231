@@ -27,5 +27,8 @@ namespace eStoreAPI.Controllers
             repository.UpdateOrderDetail(p);
             return NoContent();
         }
+
+        [HttpGet("Report")]
+        public ActionResult<List<OrderDetail>> ReportOrder(DateTime? fromDate, DateTime? toDate) => repository.ReportOrder(fromDate, toDate);
     }
 }

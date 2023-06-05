@@ -50,5 +50,28 @@ namespace DataAccess.DAO
                 throw new Exception(e.Message);
             }
         }
+
+        public static List<OrderDetail> ReportOrder(DateTime? fromDate, DateTime? toDate)
+        {
+            List<OrderDetail>? listOrderDetail = null;
+            try
+            {
+                using (var context = new PRN231_AS1Context())
+                {
+                    var query = context.OrderDetails.AsQueryable();
+                    if (fromDate != null && toDate != null)
+                    {
+                        query = query.Where(i => i.Order.OrderDate >= fromDate && i.Order.OrderDate <= toDate);
+                    }
+                    listOrderDetail = query.Include(i => i.Order).ThenInclude(i => i.Member)
+                        .Include(i => i.Product).OrderByDescending(i => i.OrderId).AsNoTracking().ToList();
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            return listOrderDetail;
+        }
     }
 }

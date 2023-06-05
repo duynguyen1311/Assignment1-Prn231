@@ -14,6 +14,9 @@ namespace DataAccess.Repository
     {
         public OrderDetail FindOrderDetailById(int orderId) => OrderDetailDAO.FindOrderDetailById(orderId);
 
+        public List<OrderDetail> ReportOrder(DateTime? fromDate, DateTime? toDate) => OrderDetailDAO.ReportOrder(fromDate, toDate);
+
         public void UpdateOrderDetail(OrderDetailUpdateRequestDto p) => OrderDetailDAO.UpdateOrderDetail(p);
+
     }
 }

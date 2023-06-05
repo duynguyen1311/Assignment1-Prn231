@@ -1,0 +1,80 @@
+﻿@page
+@model eStoreClient.Pages.ReportOrderPage.ReportOrderModel
+@{
+}
+<div class="mobile-menu-overlay"></div>
+
+<div class="main-container">
+    <div class="pd-ltr-20 xs-pd-20-10">
+        <div class="min-height-200px">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="title">
+                            <h4>Report Order</h4>
+                        </div>
+                        <nav aria-label="breadcrumb" role="navigation">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a asp-page="Index">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Report Order</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <form method="get">
+                <div class="row mb-15">
+                    <div class="col-md-4">
+                        <div class="header-search">
+                            <form method="get">
+                                <div class="form-group mb-0" style="display:flex">
+                                    @*<i style="justify-content: flex-start;"
+                                       class="dw dw-search2 search-icon mr-10 mt-15"></i>*@
+                                       <p>From Date</p>
+                                    <input asp-for="FromDate" style="justify-content: flex-end;" type="date"
+                                           class="form-control search-input" placeholder="From Date">
+                                </div>
+                                <div class="form-group mb-0" style="display:flex">
+                                    @*<i style="justify-content: flex-start;"
+                                       class="dw dw-search2 search-icon mr-10 mt-15"></i>*@
+                                       <p>To Date</p>
+                                    <input asp-for="ToDate" style="justify-content: flex-end;" type="date"
+                                           class="form-control search-input" placeholder="To Date">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <button type="submit" style="height: 44px;margin-left: 20px;width: 114px;" class="btn btn-success">Search</button>
+                </div>
+            </form>
+            <div class="table-responsive">
+                <table class="table table-striped table-bReportOrdered ">
+                    <thead style="background-color: lightgray">
+                        <tr>
+                            <th>Order Id</th>
+                            <th>Company Name</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Order Date</th>
+                            <th>Freight</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ListReportOrder)
+                        {
+                            <tr>
+                                <td class="table-plus">@item.OrderId</td>
+                                <td>@item.Order.Member.CompanyName</td>
+                                <td>@item.Product.ProductName</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Order.OrderDate</td>
+                                <td>@item.Order.Freight</td>
+                            </tr>
+                        }
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
