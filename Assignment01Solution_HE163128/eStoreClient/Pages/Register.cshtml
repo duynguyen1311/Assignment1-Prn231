@@ -32,19 +32,19 @@
                             }
                         </div>
                         <div class="input-group custom">
-                            <input type="text" class="form-control form-control-lg" placeholder="Email" asp-for="Email">
+                            <input type="email" class="form-control form-control-lg" placeholder="Email" asp-for="Email" required>
                             <div class="input-group-append custom">
                                 <span class="input-group-text"><i class="icon-copy dw dw-user1"></i></span>
                             </div>
                         </div>
                         <div class="input-group custom">
-                            <input type="text" class="form-control form-control-lg" placeholder="Password" asp-for="Password">
+                            <input type="text" class="form-control form-control-lg" placeholder="Password" asp-for="Password" required>
                             <div class="input-group-append custom">
                                 <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
                             </div>
                         </div>
                         <div class="input-group custom">
-                            <input type="text" class="form-control form-control-lg" placeholder="Company Name" asp-for="CompanyName">
+                            <input type="text" class="form-control form-control-lg" placeholder="Company Name" asp-for="CompanyName" required>
                             <div class="input-group-append custom">
                                 <span class="input-group-text"><i class="dw dw-padlock1"></i></span>
                             </div>
@@ -68,7 +68,7 @@
                                         use code for form submit
                                         <input class="btn btn-primary btn-lg btn-block" type="submit" value="Sign In">
                                     -->
-                                    <button class="btn btn-primary btn-lg btn-block" type="submit">Sign Up</button>
+                                    <button class="btn btn-primary btn-lg btn-block" type="submit" onclick="this.form.submit(); this.disabled = true";>Sign Up</button>
                                 </div>
                                 <div class="text-center mt-3"><a href="Login" >Sign In</a></div>
                             </div>

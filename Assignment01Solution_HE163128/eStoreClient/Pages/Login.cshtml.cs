@@ -1,13 +1,8 @@
-using BusinessObjects.Models;
-using eStoreClient.Dto;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System.Net.Http.Headers;
 using System.Text;
-using System.Text.Json;
 
 namespace eStoreClient.Pages
 {
@@ -55,7 +50,8 @@ namespace eStoreClient.Pages
             
             if (responseContent == "true")
             {
-                ViewData["Login"] = "Login Success";
+
+                HttpContext.Session.SetString("IsLoggedIn", "true");
                 return RedirectToPage("/Index");
             }
             else

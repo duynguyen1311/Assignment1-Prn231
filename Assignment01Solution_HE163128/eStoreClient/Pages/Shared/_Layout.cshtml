@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
 <html>
 <head>
     <!-- Basic Page Info -->
@@ -76,9 +77,9 @@
             </div>
         </div>
         <div class="header-right">
-            @*@{
-                var listNoti = await _repository.GetAll();
-            }*@
+            @{
+                var isLoggedIn = Context.Session.GetString("IsLoggedIn");
+            }
             
                 <div class="user-notification">
                     <div class="dropdown">
@@ -92,7 +93,6 @@
                                     
                                         <li>
                                             <a href="#">
-                                                
                                                 <h3>Title</h3>
                                                 <p>Content</p>
                                                 <p style="font-style:italic;font-weight: bold;">CreatedDate</p>
@@ -116,16 +116,24 @@
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
                             <a class="dropdown-item" href="/UserProfile?id="><i class="dw dw-user1"></i> Profile</a>
-                            <a class="dropdown-item" href="/Login"><i class="dw dw-logout"></i> Log Out</a>
+                            <a class="dropdown-item" href="/Logout"><i class="dw dw-logout"></i> Log Out</a>
                         </div>
                     </div>
                 </div>
             @*}
             else
             {*@
+            @if(!string.IsNullOrEmpty(isLoggedIn))
+            {
+                 <div class="user-info-dropdown">
+                    
+                </div>    
+            }else{
                 <div class="user-info-dropdown">
                     <a class="btn btn-primary" asp-page="/Login">Login</a>
                 </div>
+            }
+            
             @*}*@
         </div>
     </div>
